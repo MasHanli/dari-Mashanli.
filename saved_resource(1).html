@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- saved from url=(0012)about:srcdoc -->
+<html lang="id"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+              body { 
+                margin: 0; 
+                padding: 16px; 
+                background-color: #070707;
+              }
+            </style>
+          </head>
+          <body>
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penyemangat untuk Pacarku</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fecfef);
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #e91e63;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .quote {
+            font-style: italic;
+            color: #9c27b0;
+            margin: 20px 0;
+        }
+        .hearts {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        .heart {
+            position: absolute;
+            color: #ff4081;
+            font-size: 2em;
+            animation: float 6s infinite linear;
+        }
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); }
+            100% { transform: translateY(-100vh) rotate(360deg); }
+        }
+        button {
+            background: #e91e63;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: #c2185b;
+        }
+    </style>
+
+
+    <div class="hearts" id="hearts"><div class="heart" style="left: 62.2569vw; animation-delay: 4.16647s;">❤️</div><div class="heart" style="left: 92.1424vw; animation-delay: 3.11021s;">❤️</div><div class="heart" style="left: 26.3502vw; animation-delay: 1.35822s;">❤️</div><div class="heart" style="left: 65.5271vw; animation-delay: 0.356361s;">❤️</div><div class="heart" style="left: 11.9832vw; animation-delay: 0.579108s;">❤️</div><div class="heart" style="left: 66.8124vw; animation-delay: 0.797536s;">❤️</div><div class="heart" style="left: 84.1774vw; animation-delay: 3.88637s;">❤️</div><div class="heart" style="left: 61.3245vw; animation-delay: 3.45798s;">❤️</div><div class="heart" style="left: 61.3101vw; animation-delay: 3.47006s;">❤️</div><div class="heart" style="left: 44.7213vw; animation-delay: 4.11793s;">❤️</div><div class="heart" style="left: 91.8641vw; animation-delay: 0.754221s;">❤️</div><div class="heart" style="left: 0.387559vw; animation-delay: 5.74768s;">❤️</div></div>
+    <div class="container">
+        <h1>Untuk Pacarku yang Terhebat</h1>
+        <p>Hai sayang, aku tahu kamu sedang menghadapi beban kerja yang berat. Tapi ingat, kamu adalah orang terkuat yang aku kenal. Aku bangga banget sama kamu!</p>
+        <p class="quote">"Kerja kerasmu hari ini akan menjadi kebanggaanmu besok. Aku selalu di sini mendukungmu, sayang."</p>
+        <p>Jangan lupa istirahat ya, makan yang cukup, dan ingat aku selalu ada untukmu. Kamu bisa melaluinya! 💖</p>
+        <button onclick="showMessage()">Klik untuk Pesan Khusus</button>
+        <p id="specialMessage" style="display: none; color: #e91e63; font-weight: bold;">Aku cinta kamu lebih dari apa pun. Teruslah berjuang, aku tunggu kemenanganmu!</p>
+    </div>
+
+    <script>
+        // Animasi hati jatuh
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.innerHTML = '❤️';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDelay = Math.random() * 6 + 's';
+            document.getElementById('hearts').appendChild(heart);
+            setTimeout(() => heart.remove(), 6000);
+        }
+        setInterval(createHeart, 500);
+
+        // Fungsi untuk pesan khusus
+        function showMessage() {
+            document.getElementById('specialMessage').style.display = 'block';
+        }
+    </script>
+
+
+
+        
+      </body></html>
